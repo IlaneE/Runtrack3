@@ -1,0 +1,116 @@
+.carte {
+    height:150px;
+    width:100px;
+    background: radial-gradient(ellipse closest-side,pink, magenta);
+    /* border-radius: 5px; */
+    border-width:4px;
+    border-style:solid;
+    border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1;
+    border-radius: 5px;
+    animation: carte 3000ms infinite;
+    /* position:fixed; */
+    padding:5px;
+}
+.cas {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+@keyframes carte {
+    0% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    20% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    40% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    60% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    80% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    100% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+
+}
+#button {
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.recom {
+    position:absolute;
+    top:510px;
+    right:500px;
+}
+.recom1 {
+    background: linear-gradient(to bottom right,magenta, pink);
+    border:1px solid white;
+    border-radius:10px;
+    padding:5px;
+}
+.fond {
+    z-index:-6;
+    margin:0px;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+.fond-carte {
+    background: linear-gradient(to bottom right,magenta, pink);
+    height:450px;
+    width:850px;
+    position:absolute;
+    top:30px;
+    right:100px;
+    border:1px solid white;
+    border-radius:10px;
+    /* opacity:95%; */
+    z-index:-2;
+}
+.leaderboard {
+    background: linear-gradient(to top left,magenta, pink);
+    height:350px;
+    width:200px;
+    position:absolute;
+    top:160px;
+    left:37px;
+    border:1px solid white;
+    border-radius:10px;
+}
+.topmenu {
+    background: linear-gradient(to top left,magenta, pink);
+    border:1px solid white;
+    border-radius:10px;
+    width:230px;
+    height:140px;
+}
+.leader {
+    border-bottom:1px solid black ;
+    width:140px;
+    position:relative;
+    left:30px;
+    padding-left:5px;
+}
+.bloccarte {
+    position:absolute;
+    left:760px;
+    bottom:60px;
+    height:400px;
+    width:500px;
+}
+.blockcarte {
+    height:300px;
+    width:400px;
+    position:absolute;
+}
+#carte1 {
+    position:absolute;
+    left:500px;
+    top:100px;
+    width:300px;
+    height:200px;
+}
+.blockcarte-decouvertes {
+    position:absolute;
+    left:330px;
+    bottom: 130px;
+    width:400px;
+    height:400px;
+}

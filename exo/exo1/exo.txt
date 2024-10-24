@@ -1,0 +1,36 @@
+Exercice 1 -
+
+Créer une classe Vetement, comprenant les attributs suivants :
+
+• type
+• couleur
+• taille
+• prix
+• etat
+
+Et les méthodes suivantes :
+
+• presentation => Affiche les 5 attributs de l'objet actuel
+• modifierVetement => Prends 5 paramètres pour modifier les 5 attributs 
+  associés
+
+
+
+
+
+
+
+
+Exercice 2 -
+
+Créer une classe TasseDeThe, comportant les attributs suivants :
+
+• quantiteActuelle
+• quantiteMaxiumum
+• estChaud (booléenne)
+
+Et les méthodes suivantes :
+
+• afficherTasse() => Affiche les informations de l'objet
+• boire() => Vide la quantité à 0
+• remplir() => Remet la quantité de thé à son maximum

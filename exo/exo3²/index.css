@@ -1,0 +1,37 @@
+* {
+    margin:0px;
+    background-color: black;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+  }
+  
+  .rainbow-text {
+    animation: rainbow 5s infinite;
+    z-index:100;
+  }
+/* .fond {
+    position: fixed;
+    height:100%;
+    width:100%;
+} */
+@keyframes warn {
+    0% { margin-left: 90px;color:RED; }
+    30% { margin-left:1090px;color:blue;}
+    50% { margin-left: 1090px;color:blue; }
+    70% { margin-left: 90px;color:yellow; }
+    100% { margin-left: 90px;color:red; }
+}
+.warn {
+    animation: warn 10s infinite;
+    z-index:101;
+    color: yellow;
+}

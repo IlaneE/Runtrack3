@@ -1,0 +1,286 @@
+* {
+    /* margin: 0px; */
+    background-color: rgb(161, 161, 161);
+}
+.carte1 {
+    height:150px;
+    width:100px;
+    background: radial-gradient(ellipse closest-side,pink, magenta);
+    /* border-radius: 5px; */
+    border-width:4px;
+    border-style:solid;
+    border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1;
+    border-radius: 5px;
+    animation: carte 3000ms infinite;
+}
+.cas {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+@keyframes carte {
+    0% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    20% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    40% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    60% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    80% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    100% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+
+}
+.button {
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* carte2 */
+.carte2 {
+    height:150px;
+    width:100px;
+    background: radial-gradient(ellipse closest-side,pink, magenta);
+    /* border-radius: 5px; */
+    border-width:4px;
+    border-style:solid;
+    border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1;
+    border-radius: 5px;
+    animation: carte 3000ms infinite;
+}
+.cas1 {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+@keyframes carte1 {
+    0% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    20% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    40% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    60% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    80% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    100% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+
+}
+.button1 {
+    position:relative;
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* carte3 */
+
+.carte3 {
+    height:150px;
+    width:100px;
+    background: radial-gradient(ellipse closest-side,pink, magenta);
+    /* border-radius: 5px; */
+    border-width:4px;
+    border-style:solid;
+    border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1;
+    border-radius: 5px;
+    animation: carte 3000ms infinite;
+}
+.cas2 {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+@keyframes carte2 {
+    0% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    20% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    40% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    60% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    80% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    100% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+
+}
+.button2 {
+    position:relative;
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* carte4 */
+
+.carte4 {
+    height:150px;
+    width:100px;
+    background: radial-gradient(ellipse closest-side,pink, magenta);
+    /* border-radius: 5px; */
+    border-width:4px;
+    border-style:solid;
+    border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1;
+    border-radius: 5px;
+    animation: carte 3000ms infinite;
+}
+.cas3 {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+@keyframes carte3 {
+    0% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    20% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    40% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    60% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    80% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    100% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+
+}
+.button3 {
+    position:relative;
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* carte5 */
+
+.carte5 {
+    height:150px;
+    width:100px;
+    background: radial-gradient(ellipse closest-side,pink, magenta);
+    /* border-radius: 5px; */
+    border-width:4px;
+    border-style:solid;
+    border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1;
+    border-radius: 5px;
+    animation: carte 3000ms infinite;
+}
+.cas4 {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+@keyframes carte4 {
+    0% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    20% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    40% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    60% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    80% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    100% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+
+}
+.button4 {
+    position:relative;
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* carte6 */
+
+.carte6 {
+    height:150px;
+    width:100px;
+    background: radial-gradient(ellipse closest-side,pink, magenta);
+    /* border-radius: 5px; */
+    border-width:4px;
+    border-style:solid;
+    border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1;
+    border-radius: 5px;
+    animation: carte 3000ms infinite;
+}
+.cas5 {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+@keyframes carte5 {
+    0% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    20% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    40% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    60% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    80% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    100% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+
+}
+.button5 {
+    position:relative;
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* carte7 */
+
+.carte7 {
+    height:150px;
+    width:100px;
+    background: radial-gradient(ellipse closest-side,pink, magenta);
+    /* border-radius: 5px; */
+    border-width:4px;
+    border-style:solid;
+    border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1;
+    border-radius: 5px;
+    animation: carte 3000ms infinite;
+}
+.cas6 {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+@keyframes carte6 {
+    0% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    20% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    40% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    60% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    80% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    100% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+
+}
+.button6 {
+    position:relative;
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* carte8 */
+
+.carte8 {
+    height:150px;
+    width:100px;
+    background: radial-gradient(ellipse closest-side,pink, magenta);
+    /* border-radius: 5px; */
+    border-width:4px;
+    border-style:solid;
+    border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1;
+    border-radius: 5px;
+    animation: carte 3000ms infinite;
+}
+.cas7 {
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+@keyframes carte7 {
+    0% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    20% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    40% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    60% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+    80% { border-image: linear-gradient(to top right,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000) 1; }
+    100% { border-image: linear-gradient(to top right,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff,#ff0000,#ffffff) 1; }
+
+}
+.button7 {
+    position:relative;
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.plat {
+    height:600px;
+    width:600px;
+}

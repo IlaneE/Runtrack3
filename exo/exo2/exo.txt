@@ -1,0 +1,54 @@
+Exercice 1 - Créer une classe Smartphone, comprenant les attributs suivants :
+
+• marque
+• tailleEcran
+• prix
+• etat (neuf, occasion)
+• version (Version du système d'exploitation, iOS 18, iOS 17, ... Android 15, Android 14, ...)
+
+Et les méthodes suivantes :
+
+• initialiserSmartphone(marque, taille, prix, version) => Prends 4 paramètres, et initialise les attributs 
+  correspondants avec les valeurs, en pensant à les vérifier. Initialiser l'état à "neuf"
+• presenter Smartphone() => Affiche les attributs de l'objet
+• vendre() => Change l'état de neuf à occasion, et supprimer le prix de 50%
+• mettreAJour => Augmente d'un la version
+
+Ainsi que des getters pour chaque argument !
+
+Dans le index.php, créer une liste de 5 smartphones (Choissisez les valeurs que vous voulez !)
+Ensuite, classez les par ordre de prix croissant
+
+IMPORTANT : Par respect pour l'encapsulation, TOUS les attributs doivent être en privés
+
+
+
+
+
+
+
+
+2ème exercice - Créer une classe Pays, avec les attributs suivants :
+
+• nom
+• continent
+• population
+• latitude (Position horizontale sur une carte)
+• longitude (Position verticale sur une carte)
+
+Et ajouter les méthodes suivantes
+
+• initialisationPays(nom, continent, latitude, longitude) => Intialise les 4 attributs avec les valeurs 
+  associés, et la population à 1000
+• croissancePopulation(nouvellesPersonnes) => Prends un nombre en paramètre et l'ajoute à la population actuelle. 
+  Attention, la population totale ne peux dépasser 1M
+• decroissancePopulation(nouvellesPersonnes) => Prends un nombre en paramètre et le soustrait à la population 
+  actuelle. Attention, la population totale ne peux être négative
+• presenterPays() => Affiche les attributs de l'objet
+• migration(nouveauPays, nombre) => Prends en paramètre un pays, ajoute $nombre personne dans ce pays,
+  et en supprime $nombre du pays actuel
+
+Dans le index.php, créer une liste de 5 pays (Choissisez les valeurs que vous voulez !)
+Ensuite, classez les par ordre de population croissantes
+
+IMPORTANT : Par respect pour l'encapsulation, TOUS les attributs doivent être en privés

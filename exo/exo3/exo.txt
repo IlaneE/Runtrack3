@@ -1,0 +1,100 @@
+Exercice Héritage #1 :
+
+• Créer une classe Patisserie, comprenant les attributs suivants :
+
+• poids
+• note (Sur 5)
+• prix
+
+Et comprenant les méthodes :
+
+• presentation => Qui affiche les attributs de la patisserie
+• setPoids => Modifier le poids d'une patisserie
+• setPrix => Modifie le prix
+• setNote => Modifie la note d'une patisserie
+
+
+
+• Créer une classe Eclairs, héritant de Patisserie, et comprenant les attributs suivants :
+
+• saveurCreme (chocolat, vanille, ...)
+• saveurGlacage (chocolat, vanille, ...)
+• longueur
+
+Et les méthodes suivantes :
+
+• afficherEclair => Affiche tous les attributs de l'éclair
+• changerGlacage => prends en paramètre une nouvelle saveur pour le glacage
+• changerCreme => prends en paramètre une nouvelle saveur pour la creme		
+
+
+
+Et enfin, une classe Religieuse, héritant de Patisserie, et comprenant les attributs suivants :
+
+• saveurPremierBoule
+• saveurDeuxiemeBoule
+• supplementChantilly
+
+Et les méthodes suivantes :
+
+• afficherReligieuse => Affiche tous les attributs de la religieuse
+• modifierPremiereBoule => Prends un paramètre pour modifier la saveur de la premiere boule (chocolat, ...)
+• modifierDeuxièmeBoule => Prends un paramètre pour modifier la saveur de la deuxième boule (chocolat, ...)
+• setChantilly => Permet d'ajouter ou non de la chantilly
+
+
+
+
+
+
+
+
+
+
+Exercice Héritage #2 :
+
+Créer une classe Animaux, avec les attributs suivants :
+
+• nom
+• taille
+• poids
+• alimentation (carnivore, herbivore, omnivore - Aucune autre valeur possible)
+
+Et une méthode présentation, qui affiche les caractéristiques de l'oiseau
+
+
+
+Créer une classe Oiseaux, qui hérite d'animaux, et qui y ajoute les attributs suivants :
+
+• peuxVoler (boléenne)
+• estEnVol (boléenne)
+
+Et les méthodes suivantes :
+
+• presentation => Présente l'oiseau comme si il était un animal classique, et ajoute ensuite ces attributs
+• envoler => Vérifie si l'oiseau peux voler, et si oui, modifie l'attribut estEnVol à true
+• atterir => Vérifie si l'oiseau peux voler et est en vol, et si oui, met estEnVol à false
+
+
+
+• Créer une classe Autruche, qui hérite d'Oiseaux, et y ajoute une méthode presentation, qui affiche ces informations d'Animaux,
+  puis d'Oiseau, et affiche que c'est une autruche
+
+• Créer une classe Colibri, qui hérite d'Oiseaux, et y ajoute une méthode presentation, qui affiche ces informations d'Animaux,
+  puis d'Oiseau, et affiche que c'est un colibri
+
+
+
+
+• Créer une classe Félins, qui hérite de Animaux et y ajoute les méthodes suivantes :
+
+• chasser => Affiche un message indiquant que le Félin chasse, et augmente son poids de 5
+• presentation => Présente le félin comme un animal, et précise ensuite que c'est un félin
+
+
+
+• Créer une classe Lion, qui hérite de Félins, et y ajoute une méthode presentation, qui affiche ces informations d'Animaux, puis de Félin,
+  et affiche que c'est un lion
+
+• Créer une classe Tigre, qui hérite de Félins, et y ajoute une méthode presentation, qui affiche ces informations d'Animaux, puis de Félins,
+  et affiche que c'est un tigre.
