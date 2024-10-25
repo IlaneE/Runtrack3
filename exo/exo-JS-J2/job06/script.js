@@ -7,7 +7,9 @@ const konamiCode = [
 let index = 0;
 
 document.addEventListener('keydown', function (event) {
-    if (event.key === konamiCode[index]) {
+
+    if (event.key == konamiCode[index]) {
+        console.log("OK")
         index++;
         if (index === konamiCode.length) {
             document.body.classList.toggle('konami-mode');
