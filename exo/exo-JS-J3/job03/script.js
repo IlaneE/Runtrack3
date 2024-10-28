@@ -6,7 +6,7 @@ const gameContainer = document.getElementById('game');
         const size = 3;
 
         function initializeGame() {
-            tiles = [...Array(size * size - 1).keys()].map(i => ({ id: i + 1, image: `images/pika${i + 1}.png` }));
+            tiles = [...Array(size * size - 1).keys()].map(i => ({ id: i + 1, image: `images/walid${i + 1}.png` }));
             tiles.push(null); // Case vide
             shuffleTiles();
             render();

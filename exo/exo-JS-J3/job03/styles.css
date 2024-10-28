@@ -27,3 +27,10 @@ body {
     display: none;
     margin-top: 20px;
 }
+.example {
+    position:absolute;
+    left:10px;
+    top:90px;
+    width:400px;
+    height:400px;
+}
