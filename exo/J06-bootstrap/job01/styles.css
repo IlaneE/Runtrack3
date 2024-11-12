@@ -115,8 +115,8 @@ body {
 }
 #pagi {
     position: absolute;
-    left:390px;
-    top:380px;
+    left:730px;
+    top:463px;
     border:1px solid black;
     height:40px;
     border-radius: 5px;
@@ -438,7 +438,68 @@ body {
     margin-top: -5px;
     margin-bottom: 10px;
 }
-/* .espbot {
+
+
+.jumbotron {
     position: absolute;
-    top:2000px;
-} */
+    bottom:15px;
+    left:200px;
+    z-index:5;
+    background:none;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn-reboot {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-reboot:hover {
+    background-color: #c9302c;
+}
+.loader {
+    /* position: absolute; */
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.pagination button:hover {
+    background-color: #0056b3;
+}

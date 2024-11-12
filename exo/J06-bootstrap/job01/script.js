@@ -167,3 +167,102 @@ cancelBtn.addEventListener('click', function() {
 
 
 //----------------------
+
+//_________________________________________
+
+ // Liste de citations de Blade Runner
+ const quotes = [
+    "Je crois que... non en fait rien..",
+    "2+2=22",
+    "Blah blah blah",
+    "0+0 = La tête à toto",
+    "à l'aide...."
+];
+
+// Contenus pour la pagination
+const paginationContent = [
+    "La supremacie",
+    "La subordination",
+    "la flemme"
+];
+
+// Fonction pour "Rebooter le Monde" avec une citation aléatoire
+function rebootWorld() {
+    // Affiche l'animation de chargement
+    const spinner = document.getElementById("spinner");
+    spinner.style.display = "inline-block";
+
+    // Changer de texte après un léger délai pour simuler le chargement
+    setTimeout(() => {
+        // Sélectionner une citation aléatoire
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        
+        // Modifier le texte du jumbotron
+        document.getElementById("jumbotron").innerText = randomQuote;
+        
+        // Masquer l'animation de chargement
+        spinner.style.display = "none";
+    }, 1000); // Délai de 1 seconde pour l'effet de chargement
+}
+
+// Fonction pour changer le contenu du jumbotron avec la pagination
+function changeContent(pageNumber) {
+    const content = paginationContent[pageNumber - 1];
+    document.getElementById("jumbotron").innerText = content;
+}
+
+//______________________________________________
+
+// Initialisation des variables pour suivre la séquence des touches
+let keySequence = [];
+
+// Fonction pour vérifier si la séquence correcte a été entrée
+function checkSequence() {
+    const sequence = ['d', 'g', 'c'];  // La séquence de touches attendue
+    if (keySequence.join('') === sequence.join('')) {
+        afficherModale();
+        keySequence = []; // Réinitialise la séquence après affichage
+    } else if (keySequence.length >= sequence.length) {
+        keySequence.shift(); // Garde les derniers caractères seulement
+    }
+}
+
+// Fonction pour afficher la modale
+function afficherModale() {
+    alert("Modale affichée !");
+    // Ici, vous pourriez utiliser du code pour afficher une modale plus sophistiquée, comme Bootstrap
+    // ou une modale personnalisée avec CSS et JavaScript
+}
+
+// Écouteur d'événements pour les touches
+document.addEventListener('keydown', (event) => {
+    const key = event.key.toLowerCase();
+    if (['d', 'g', 'c'].includes(key)) { // Vérifie que la touche est attendue
+        keySequence.push(key);
+        checkSequence();
+    }
+});
+
+
+//_____________________________________________________
+
+// Fonction de validation du formulaire et changement de couleur du spinner
+function validateForm() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (email && password) { // Si les deux champs sont remplis
+        changeSpinnerColor(); // Changer la couleur du spinner
+    } else {
+        alert("Veuillez remplir l'email et le mot de passe.");
+    }
+}
+
+// Fonction pour changer la couleur du spinner aléatoirement
+function changeSpinnerColor() {
+    const spinner = document.getElementById("spinner");
+    const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`; // Couleur aléatoire hexadécimale
+    spinner.style.borderTopColor = randomColor; // Appliquer la couleur au spinner
+}
+
+//________________________________________

@@ -13,7 +13,7 @@
 
 <nav class="nav"> 
   <h4 class="nav-titre">USJC</h4>
-  <a class="nav-link active" id="nav0" aria-current="page" href="#">Accueil</a>
+  <a class="nav-link active" id="nav0" aria-current="page" href="https://laplateforme.io/">Accueil</a>
   <a class="nav-link" id="nav1" href="#1">Quelque part ?</a>
   <a class="nav-link" id="nav2" href="#2">Un endroit ?</a>
   <a class="nav-link" id="nav3" aria-disabled="true" href="#3">Un autre endroit ¿?</a>
@@ -57,27 +57,28 @@
       <p class="unebar"></p>
       <p>Un bouton pour un.. Truc, je crois ?</p>
 
-      <label id="unbtn" for="toggleButton" class="button">Un bouton ?</label>
-      <input type="checkbox" id="toggleButton" hidden>
+      <div class="jumbotron" id="jumbotron">
+        1+1=11
+    </div>
 
-      <div class="hiddenElement">
+      <!-- Button and Loader -->
+    <div class="btn-container">
+        <button id="unbtn" class="btn-reboot" onclick="rebootWorld()">Un bouton... je crois ?¿?</button>
+        <div class="loader" id="spinner"></div>
+    </div>
+
+      <!-- <div class="hiddenElement">
         <div id="spinner1" class="spinner-border" role="status">
           <span class="visually-hidden"></span>
-        </div>
+        </div> -->
       </div>
   </div>
 
   <!-- pagination -->
-<div class="pagi">
-  <nav id="pagi" aria-label="Page navigation example">
-    <ul class="pagination">
-      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-    </ul>
-  </nav>
+  <div id="pagi" class="pagination">
+    <button onclick="changeContent(1)">Page 1</button>
+    <button onclick="changeContent(2)">Page 2</button>
+    <button onclick="changeContent(3)">Page 3</button>
 </div>
 </div>
 
@@ -279,14 +280,14 @@
 <!-- insc & connex-->
 
 <div class="contain">
-    <!-- Left Form Section -->
+    <!-- Section gauche du formulaire -->
     <div class="form-left">
         <h3>Recevez votre copie gratuite d'internet 2!</h3>
         <div class="form-group">
-            <input type="text" placeholder="Login">
+            <input type="text" placeholder="Login" id="login">
         </div>
         <div class="form-group">
-            <input type="password" placeholder="Mot de Passe">
+            <input type="password" placeholder="Mot de Passe" id="motdepasse">
         </div>
         <div class="form-group">
             <label for="dogecoin">DogeCoin</label>
@@ -294,11 +295,11 @@
             <span class="currency">.00</span>
         </div>
         <div class="form-group">
-            <input type="url" placeholder="URL des Internets 2 et 2.1 Beta">
+            <input type="url" placeholder="URL des Internets 2 et 2.1 Beta" id="url_internet">
         </div>
     </div>
 
-    <!-- Right Form Section -->
+    <!-- Section droite du formulaire -->
     <div class="form-right">
         <div class="form-group">
             <label for="email">Email address</label>
@@ -313,7 +314,7 @@
             <input type="checkbox" id="checkme">
             <label for="checkme">Check me out</label>
         </div>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button type="button" class="submit-btn" onclick="validateForm()">Submit</button>
     </div>
 </div>
 
