@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="barTop">
+        <h1 class="title"><a class="linkw" href="index.html">Jour 05</a></h1>
+        <h2 class="title2">Inscription</h2>
+        <button class="btnConnexion"><a href="connexion.html">Connexion</a></button>
+        <button class="btnInscription"><a href="inscription.html">Inscription</a></button>
+    </div>
+    
+<form class="register" id="registrationForm">
+    <h2>Inscription</h2>
+    <input type="text" id="nom" placeholder="Nom" minlength="2" required>
+    <div class="error" id="nomError"></div><br>
+    
+    <input type="text" id="prenom" placeholder="Prénom" minlength="2" required>
+    <div class="error" id="prenomError"></div><br>
+    
+    <input type="email" id="email" placeholder="Email" required>
+    <div class="error" id="emailError"></div><br>
+    
+    <input type="password" id="password" placeholder="Mot de passe" required>
+    <div class="error" id="passwordError"></div><br>
+    
+    <input type="text" id="adresse" placeholder="Adresse" required>
+    <div class="error" id="adresseError"></div><br>
+    
+    <input type="text" id="codePostal" placeholder="Code postal" required>
+    <div class="error" id="codePostalError"></div><br>
+    
+    <button type="submit">S'inscrire</button>
+</form>
+
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        let nomError = '', prenomError = '', emailError = '', passwordError = '', adresseError = '', codePostalError = '';
+
+        const nom = document.getElementById('nom').value;
+        const prenom = document.getElementById('prenom').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const adresse = document.getElementById('adresse').value;
+        const codePostal = document.getElementById('codePostal').value;
+
+        // Vérification des champs
+        if (nom.trim() === '') {
+            nomError = 'Veuillez entrer votre nom.';
+        }
+        if (prenom.trim() === '') {
+            prenomError = 'Veuillez entrer votre prénom.';
+        }
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            emailError = 'Veuillez entrer un email valide.';
+        }
+        if (password.length < 6) {
+            passwordError = 'Le mot de passe doit contenir au moins 6 caractères.';
+        }
+        if (adresse.trim() === '') {
+            adresseError = 'Veuillez entrer votre adresse.';
+        }
+        const postalPattern = /^\d{5}$/; // Vérification simple pour un code postal de 5 chiffres
+        if (!postalPattern.test(codePostal)) {
+            codePostalError = 'Veuillez entrer un code postal valide (5 chiffres).';
+        }
+
+        document.getElementById('nomError').innerText = nomError;
+        document.getElementById('prenomError').innerText = prenomError;
+        document.getElementById('emailError').innerText = emailError;
+        document.getElementById('passwordError').innerText = passwordError;
+        document.getElementById('adresseError').innerText = adresseError;
+        document.getElementById('codePostalError').innerText = codePostalError;
+
+        if (!nomError && !prenomError && !emailError && !passwordError && !adresseError && !codePostalError) {
+            alert('Inscription réussie !'); // Remplace cela par un appel à ton backend.
+        }
+    });
+</script>
+</body>
+</html>

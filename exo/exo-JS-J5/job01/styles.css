@@ -1,0 +1,70 @@
+.barTop {
+    background-color: rgb(2, 138, 68);
+    border: 1px solid black;
+    border-radius: 50px;
+    width:1240px;
+    height:100px;
+    position:fixed;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    z-index: 10;
+    top:0px;
+}
+.btnConnexion {
+    border-radius: 40px;
+    border: 1px solid black;
+    background-color: rgb(235, 235, 235);
+    padding:10px;
+    position: relative;
+    left:1100px;
+    bottom:95px;
+    color: black;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0);
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding:10px;
+    padding-left:15px;
+    padding-right:15px;
+}
+.title {
+    color: white;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left:20px;
+    top:5px;
+    text-shadow: 3px 3px 0px rgb(0, 0, 0);
+    width:200px;
+}
+.title2 {
+    color: white;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left:555px;
+    bottom:50px;
+    text-shadow: 3px 3px 0px rgba(0,0,0);
+}
+.btnInscription {
+    border-radius: 40px;
+    border: 1px solid black;
+    background-color: rgb(235, 235, 235);
+    padding:10px;
+    position: relative;
+    left:825px;
+    bottom:95px;
+    color: black;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0);
+}
+.linkw {
+    color: white;
+}
+.connect {
+    position: relative;
+    top:100px;
+    margin-left:100px;
+}
+.register {
+    position: relative;
+    top:100px;
+    margin-left:100px;
+}

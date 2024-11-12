@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="barTop">
+        <h1 class="title"><a class="linkw" href="index.html">Jour 05</a></h1>
+        <h2 class="title2">Connexion</h2>
+        <button class="btnConnexion"><a href="connexion.html">Connexion</a></button> 
+        <button class="btnInscription"><a href="inscription.html">Inscription</a></button>  
+    </div>
+    
+<form class="connect" id="loginForm">
+    <h2>Connexion</h2>
+    <input type="email" id="email" placeholder="Email" required>
+    <div class="error" id="emailError"></div>
+    
+    <input type="password" id="password" placeholder="Mot de passe" required>
+    <div class="error" id="passwordError"></div>
+    
+    <button type="submit">Se connecter</button>
+</form>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        let emailError = '';
+        let passwordError = '';
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Vérif email
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            emailError = 'Veuillez entrer un email valide.';
+        }
+
+        // Vérif mdp
+        if (password.length < 6) {
+            passwordError = 'Le mot de passe doit contenir au moins 6 caractères.';
+        }
+
+        document.getElementById('emailError').innerText = emailError;
+        document.getElementById('passwordError').innerText = passwordError;
+
+        if (!emailError && !passwordError) {
+            alert('Connexion réussie !'); // Remplace cela par un appel du backend.
+        }
+    });
+</script>
+    
+</body>
+</html>

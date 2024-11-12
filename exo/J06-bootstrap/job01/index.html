@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <Link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- navbar -->
+
+<nav class="nav"> 
+  <h4 class="nav-titre">USJC</h4>
+  <a class="nav-link active" id="nav0" aria-current="page" href="#">Accueil</a>
+  <a class="nav-link" id="nav1" href="#1">Quelque part ?</a>
+  <a class="nav-link" id="nav2" href="#2">Un endroit ?</a>
+  <a class="nav-link" id="nav3" aria-disabled="true" href="#3">Un autre endroit ¿?</a>
+</nav>
+
+<!-- titre -->
+
+<center><h1>Un site... Je crois ?</h1></center> 
+
+<!-- Carte -->
+
+<div class="card" id="card1" style="width: 18rem;">
+  <img src="https://qph.cf2.quoracdn.net/main-qimg-42ef921d7e3f136717e464a3d624f3cd-lq" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Un.. Truc ??</h5>
+    <p class="card-text">Bah je crois que c'est quelque chose ? <br>Enfin, je crois ?</p>
+    <a href="#" id="btnuntruc" class="btn btn-primary">Commander ce.. Truc ?¿?</a>
+
+<!-- Fenêtre Pop-up -->
+<div id="popup" class="popup" style="display: none;">
+  <div class="popup-content">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <h2>Confirmation</h2>
+    <p>Voulez-vous vraiment commander ce Truc ?</p>
+    <button id="confirmBtn">Oui</button>
+    <button id="cancelBtn">Non</button>
+  </div>
+</div>
+  </div>
+</div>
+
+<!-- carte principale -->
+
+<div class="card" id="card2">
+  <div class="card-body" >
+    <h5 class="card-title">Présentation du.. site ??</h5>
+    <p>Eh bien déjà ce.. site, je crois ? <br>Eh bah, il sert à.. je sais pas en fait... Attend je reviens,
+      je vais voir avec mon... patron ? <br><br>[Une musique d'ascenceur se lance]<br><br>🎵-🎶🎶🎶-🎵🎵🎵-🎶🎶🎶🎶-
+      🎵🎵-🎶🎶🎶-🎵-🎶-🎵🎵🎵-🎶<br><br>[La musique d'ascenceur s'arrête]<br><br>Alors en fait le site sert à...
+      bah je sais toujours pas.</p>    
+      <p class="unebar"></p>
+      <p>Un bouton pour un.. Truc, je crois ?</p>
+
+      <label id="unbtn" for="toggleButton" class="button">Un bouton ?</label>
+      <input type="checkbox" id="toggleButton" hidden>
+
+      <div class="hiddenElement">
+        <div id="spinner1" class="spinner-border" role="status">
+          <span class="visually-hidden"></span>
+        </div>
+      </div>
+  </div>
+
+  <!-- pagination -->
+<div class="pagi">
+  <nav id="pagi" aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
+
+
+<!-- Carte3 -->
+
+<div class="card" id="card3" style="width: 18rem;">
+  <div class="censured-blur" id="blurText">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjiPUMnFked7PthGCfgWvaiKR4JLg-lqm5TQ&s" class="card-img-top" alt="...">
+  </div>
+  <button id="mon-bouton1" onclick="disparaitre1()">⚠⚠⚠<br>Cliquez pour faire disparaître<br>⚠⚠⚠</button><!--premier bouton-->
+  <button id="mon-bouton2" onclick="disparaitre2()">☢☢☢<br>T'es sûr<br>☢☢☢</button><!--deuxieme bouton-->
+  <button id="mon-bouton3" onclick="disparaitre3()">☣☣☣<br>Sûr de sûr ?!<br>☣☣☣</button><!--troixieme bouton-->
+  <button id="mon-bouton" class="buttonflou" onclick="removeBlur(),disparaitre()">☢⚠☣<br>À tes risques et périls<br>☣⚠☢</button> <!--dernier bouton-->
+  <div class="card-body">
+    <h5 class="card-title">Un autre.. Truc.. mais chelou ??</h5>
+    <p class="card-text">C'est vraiment chelou !<br>À l'aide... </p>
+    <a href="#" id="btnuntruc1" class="btn btn-primary">Débarrassez nous en, par pitié !</a>
+  </div>
+</div>
+
+
+<!-- bloc chargement -->
+
+<div class="bloccharge">
+
+  <center><h5 style="margin-top:20px;">Si cette barre atteint les 100%, tu aura un joli cadeau 😏😉</h5></center>
+
+<!-- barre de chargement -->
+
+<div class="container mt-5">
+  <div class="progress" role="progressbar" aria-label="Exemple avec étiquette" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+      <div id="progress-bar" class="progress-bar overflow-visible text-dark" style="width: 0%;"></div>
+  </div>
+  <div class="mt-3">
+      <button id="start-progress" class="btn btn-primary">Démarrer la progression</button>
+      <button id="reset-progress" class="btn btn-secondary ml-3">Réinitialiser</button>
+  </div>
+</div>
+
+<!-- Modal (Popup) -->
+<div class="modal fade" id="completionModal" tabindex="-1" role="dialog" aria-labelledby="completionModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="completionModalLabel">Chargement terminé... Je crois ?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <center>À quoi tu pensais ?!</center>
+              <img style="width: 470px; height:400px;" src="images/therock.gif"/>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+</div>
+
+<!-- fin blocchargement-->
+
+<!-- list group T -->
+
+<div class="container mt-5">
+  <!-- Liste d'éléments -->
+  <ul class="list-group" id="list">
+      <center><li class="list-group-item">🏃‍♂️</li></center>
+      <center><li class="list-group-item">🚬</li></center>
+      <center><li class="list-group-item">🐌</li></center>
+      <center><li class="list-group-item">🧻</li></center>
+      <center><li class="list-group-item" id="fifth-item">🐎</li></center>
+  </ul>
+</div>
+
+<!-- Modal 1 (pour l'élément actif) -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Élément Actif</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              Vous avez sélectionné l'élément actif.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 2 (pour le deuxième élément) -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Deuxième Élément</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              Vous avez sélectionné le deuxième élément de la liste.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 3 (pour le troisième élément) -->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Troisième Élément</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              Vous avez sélectionné le troisième élément de la liste.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 4 (pour le quatrième élément) -->
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal4Label">Quatrième Élément</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              Vous avez sélectionné le quatrième élément de la liste.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 5 (pour le cinquième élément) -->
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal5Label">Cinquième Élément</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              Vous avez sélectionné le cinquième élément de la liste. Continuez à cliquer dans le bon ordre pour afficher le sixième élément.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal 6 (pour le sixième élément) -->
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modal6Label">Sixième Élément</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              Félicitations ! Vous avez sélectionné les éléments dans le bon ordre et le sixième élément a été ajouté à la liste.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- insc & connex-->
+
+<div class="contain">
+    <!-- Left Form Section -->
+    <div class="form-left">
+        <h3>Recevez votre copie gratuite d'internet 2!</h3>
+        <div class="form-group">
+            <input type="text" placeholder="Login">
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Mot de Passe">
+        </div>
+        <div class="form-group">
+            <label for="dogecoin">DogeCoin</label>
+            <input type="number" id="dogecoin" class="dogecoin" placeholder="0.00" step="0.01" min="0">
+            <span class="currency">.00</span>
+        </div>
+        <div class="form-group">
+            <input type="url" placeholder="URL des Internets 2 et 2.1 Beta">
+        </div>
+    </div>
+
+    <!-- Right Form Section -->
+    <div class="form-right">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="example@example.com">
+        </div>
+        <p class="small-text">We'll never share your email with anyone else.</p>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="checkme">
+            <label for="checkme">Check me out</label>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
