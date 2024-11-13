@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Création de Compte</title>
+    <!-- Lien vers le CSS de Materialize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Icones Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header>
+        <nav>
+            <div class="nav-wrapper red">
+                <a href="#" class="brand-logo center">Mon Site</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Inscription</a></li>
+                    <li><a href="index.html">Connexion</a></li>
+                    <li><a href="index.html">Rechercher</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section pour le formulaire de création de compte -->
+    <main class="container">
+        <h4>Créer un compte</h4>
+        <form>
+            <!-- Civilité (radio buttons) -->
+            <div class="input-field">
+                <p>Civilité :</p>
+                <p>
+                    <label>
+                        <input name="civilite" type="radio" value="monsieur" checked />
+                        <span>Monsieur</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="civilite" type="radio" value="madame" />
+                        <span>Madame</span>
+                    </label>
+                </p>
+            </div>
+
+            <!-- Prénom -->
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="prenom" type="text" name="prenom" required class="validate">
+                <label for="prenom">Prénom</label>
+            </div>
+
+            <!-- Nom -->
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="nom" type="text" name="nom" required class="validate">
+                <label for="nom">Nom</label>
+            </div>
+
+            <!-- Adresse -->
+            <div class="input-field">
+                <i class="material-icons prefix">home</i>
+                <input id="adresse" type="text" name="adresse" required class="validate">
+                <label for="adresse">Adresse</label>
+            </div>
+
+            <!-- Email -->
+            <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" name="email" required class="validate">
+                <label for="email">Adresse Email</label>
+            </div>
+
+            <!-- Mot de Passe -->
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input id="password" type="password" name="password" required class="validate">
+                <label for="password">Mot de Passe</label>
+            </div>
+
+            <!-- Confirmer le Mot de Passe -->
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input id="confirm_password" type="password" name="confirm_password" required class="validate">
+                <label for="confirm_password">Confirmer le Mot de Passe</label>
+            </div>
+
+            <!-- Passions -->
+            <p>Passions :</p>
+            <p>
+                <label>
+                    <input type="checkbox" name="passions" value="informatique" />
+                    <span>Informatique</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="passions" value="voyages" />
+                    <span>Voyages</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="passions" value="sport" />
+                    <span>Sport</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="passions" value="lecture" />
+                    <span>Lecture</span>
+                </label>
+            </p>
+
+            <button type="submit" class="btn red">Valider</button>
+        </form>
+    </main>
+
+    <br>
+
+    <footer class="page-footer purple">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Mon Site</h5>
+                    <p class="grey-text text-lighten-4">Bienvenue sur notre site. Inscrivez-vous pour rejoindre notre communauté !</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Liens</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Accueil</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inscription</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Connexion</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Rechercher</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lien vers le JS de Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
